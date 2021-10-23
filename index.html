@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Apti-首页</title>
+    <!-- zui -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/zui/1.9.2/css/zui.min.css">
+  </head>
+  <body>
+      <!-- 侧边栏 顶部Tab栏 -->
+  <body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-layout-auto mdui-loaded">
+    <header class="mdui-appbar mdui-appbar-fixed">
+      <div class="mdui-toolbar">
+      <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i class="mdui-icon material-icons">menu</i></button>
+      <span class="mdui-typo-title">Apti-首页</span>
+      <div class="mdui-toolbar-spacer"></div>
+      <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '切换主题'}"onclick="mdui.$('body').toggleClass('mdui-theme-layout-dark')"><i class="mdui-icon material-icons">color_lens</i></a>
+      </div>
+    </header>
+    <div class="mdui-drawer mdui-shadow-1 mdui-drawer-false" id="drawer">
+
+
+      <ul class="mdui-list" mdui-collapse="{accordion: true}">
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href = 'index.html'">
+          <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-red mdui-text-color-white">home</i>
+          <div class="mdui-list-item-content">首页</div><i class="mdui-icon material-icons">adjust</i>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href = 'zyzx.html'">
+          <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-orange mdui-text-color-white">archive</i>
+          <div class="mdui-list-item-content">资源中心</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href = 'sqxz.php'">
+          <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color- mdui-text-color-white">dns</i>
+          <div class="mdui-list-item-content">授权中心</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" onclick="window.location.href = 'wyy.html'">
+          <i class="mdui-icon material-icons mdui-list-item-avatar material-icons mdui-color-blue mdui-text-color-white">album</i>
+          <div class="mdui-list-item-content">每日网抑云</div>
+        </li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    <p>此网站目前处于公测阶段，部分功能暂不稳定，请见谅!</p>
+  </div>
+  
+  <div class="mdui-container">
+    <h1>更新公告————————</h1>
+    <h2>2021.9.29</h2>
+    <h3>1.优化"左侧导航栏"的"部分图标"和"其他界面"</h3>
+    <h3>2.新增"资源中心/音乐站"，"往期词库更新"将删除</h3>
+    <h3>3.更新"查授权"api接口[暂时不开放] 注["零某人的api"将停止相关维护]</h3>
+    <h3>[左侧菜单栏图标为灰色，表示功能暂未开放，处于内测]</h3>
+  </div>
+
+    <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- ZUI Javascript组件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zui/1.9.2/js/zui.min.js"></script>
+  </body>
+</html>
